@@ -1,1 +1,15 @@
-Hello World
+print('Enter a number 1-50 for a chance to win 10 dollars!')
+
+
+while True:
+  text=input()
+  if int(text) in range(1, 50):
+    print('your entry has been counted.')
+
+    if int(text)==25:
+        print('You picked 25, WIN, go to www.example.net to claim your prize')
+        break
+    else:
+      print('you picked {}, fail'.format(text))
+  else:
+    print('Your entry has been sent to the gulags, try again')
